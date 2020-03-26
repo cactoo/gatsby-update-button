@@ -10,7 +10,8 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import UpdateButton from "./UpdateButton"
+// import UpdateButtonWithHOC from "./UpdateButtonWithHOC"
+import UpdateButtonWithHook from "./UpdateButtonWithHook"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -27,7 +28,8 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <UpdateButton />
+      {/* <UpdateButtonWithHOC /> */}
+      <UpdateButtonWithHook />
       <div
         style={{
           margin: `0 auto`,

@@ -1,7 +1,8 @@
 import React from "react"
-import withAppUpdatesChecker from "./withAppUpdatesChecker"
+import withAppUpdatesChecker from "./withSWUpdateChecker"
 
-const UPDATE_CHECKING_INTERVAL = 15 * 1000
+const CHECK_INTERVAL = 15 * 1000
+const UPDATE_ON_LOAD = true
 
 function UpdateButton({ hasUpdate, updateHandler }) {
   if (!hasUpdate) return null
@@ -19,6 +20,6 @@ function UpdateButton({ hasUpdate, updateHandler }) {
 }
 
 export default withAppUpdatesChecker(UpdateButton, {
-  checkInterval: UPDATE_CHECKING_INTERVAL,
-  updateOnLoad: false,
+  checkInterval: CHECK_INTERVAL,
+  updateOnLoad: UPDATE_ON_LOAD,
 })
