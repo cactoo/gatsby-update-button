@@ -620,3 +620,23 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+.updateButton {
+  display: block;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  padding: 1rem;
+  background-color: green;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+}
+
+.updateButton:hover {
+  background-color: lightgreen;
+}
