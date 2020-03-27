@@ -21,3 +21,5 @@ Create site build (`yarn build`) and serve it (`yarn serve`). Then open [localho
 
 Read more about Service Worker lifecycles here:
 [https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle](https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle)
+
+![Animation showing popping Update App button](https://raw.githubusercontent.com/cactoo/gatsby-update-message-t/master/src/images/demo.gif)
