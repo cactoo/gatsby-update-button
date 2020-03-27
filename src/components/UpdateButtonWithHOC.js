@@ -1,5 +1,5 @@
 import React from "react"
-import withAppUpdatesChecker from "./withSWUpdateChecker"
+import { withSWUpdateChecker } from "service-worker-updater"
 
 const CHECK_INTERVAL = 15 * 1000
 const UPDATE_ON_LOAD = true
@@ -19,7 +19,7 @@ function UpdateButton({ hasUpdate, updateHandler }) {
   )
 }
 
-export default withAppUpdatesChecker(UpdateButton, {
+export default withSWUpdateChecker(UpdateButton, {
   checkInterval: CHECK_INTERVAL,
   updateOnLoad: UPDATE_ON_LOAD,
 })
